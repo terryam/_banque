@@ -25,8 +25,8 @@ public class Operation {
          */
         // Relation Operation_Compte
         @ManyToOne
-        @JoinColumn(name = "ID_CPT")
-        private Compte compte;
+        @JoinColumn(name = "ID_CLIENT")
+        private Operation operation;
 
         /**
          * Constructeur par defaut
@@ -79,11 +79,11 @@ public class Operation {
             this.motif = motif;
         }
 
-        public Compte getCompte() {
-            return compte;
+        public Operation getOperation() {
+            return operation;
         }
 
-        public void setCompte(Compte compte) {
-            this.compte = compte;
+        public void setOperation(Operation operation) {
+            this.operation = operation;
         }
 }
